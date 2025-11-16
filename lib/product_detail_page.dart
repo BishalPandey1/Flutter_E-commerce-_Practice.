@@ -17,6 +17,12 @@ class ProductDetailPage extends StatelessWidget {
             product.title,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
+          Center(
+            child: Text(
+              "View more....",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
         ],
       ),
     );

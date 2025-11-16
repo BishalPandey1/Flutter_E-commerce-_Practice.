@@ -33,7 +33,15 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Sukuna Ecommerce")),
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 7, 241, 159),
+        title: Center(
+          child: Text(
+            "Simple Ecommerce",
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+      ),
 
       body: products.isEmpty
           ? Center(child: CircularProgressIndicator())
