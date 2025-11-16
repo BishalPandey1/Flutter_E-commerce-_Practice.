@@ -7,15 +7,25 @@ class ProductDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Detail")),
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 7, 241, 159),
+        title: Text("Detail", style: TextStyle(color: Colors.white)),
+      ),
 
       body: ListView(
         children: [
-          SizedBox(height: 250, child: Image.network(product.image)),
+          SizedBox(
+            height: 250,
+            width: 500,
+            child: Image.network(product.image),
+          ),
+          Padding(padding: EdgeInsetsGeometry.only(bottom: 50)),
 
-          Text(
-            product.title,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+          Center(
+            child: Text(
+              product.title,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
           ),
           Center(
             child: Text(
